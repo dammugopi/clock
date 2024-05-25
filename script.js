@@ -63,7 +63,7 @@ function displayData(data){
   console.log(data.main.temp-273.15);
 
   const temp = document.getElementById('valuetemp');
-  temp.textContent=`${Math.ceil(data.main.temp-273.15)}°C`;
+  temp.textContent=`${Math.ceil(data.main.temp-273.15)}`;
   city.value=""
 }
 
