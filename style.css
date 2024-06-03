@@ -9,17 +9,33 @@
  
  
 
+
+.outercontainer{
+  background-color: #081b29;
+  cursor:   url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ACurved_Arrow.svg&psig=AOvVaw2ZbDo0AAWfXWjQovU8SpYk&ust=1717069111598000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPji-IHjsoYDFQAAAAAdAAAAABAJ) 
+  auto; ;
+}
+.maincontainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 80vh;
+
+   
+}
 .container {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #081b29;
   overflow-x: hidden;
+  overflow-y:hidden;
+  height: 600px;
+  width:600px ;
   
 }
 .inputbox{
-  position: absolute;
+  position: relative;
   height: 70px;
   width:  100vw;
   /* background: #0ef; */
@@ -76,7 +92,10 @@ button:hover{
 } */
 
 
-
+/* .wrapper1{
+  position: absolute;
+  margin-right: 500px;
+} */
 .wrapper {
   position: relative;
   width: 400px;
@@ -85,6 +104,9 @@ button:hover{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* background: url('https://pbs.twimg.com/profile_images/1696622337460674562/kFIsSwM4_400x400.jpg'); */
    
 }
@@ -257,6 +279,7 @@ button:hover{
   transform: rotate(calc(var(--index) * 30deg));
   inset: 6px;
   text-align: center;
+  font-family: "Tektur", sans-serif;
 }
 
 .number-hours span p {
@@ -295,11 +318,13 @@ button:hover{
 }
 
 .hands-box .hours i {
-  width: 6px;
+  width: 100px;
   /* half of parents height */
   height: calc(100px + 20px);
   /* background: red; */
   box-shadow: 0 0 10px #0ef;
+  clip-path: polygon(49% 22%, 49% 0, 54% 0, 54% 22%, 66% 29%, 54% 34%, 50% 100%, 50% 100%, 49% 34%, 36% 29%);  
+  
 }
 
 .hands-box .minutes {
